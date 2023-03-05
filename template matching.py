@@ -6,7 +6,7 @@ desired_height = 320  # желаемая высота
 dim = (desired_width, desired_height)  # размер в итоге
 
 # Загрузка исходного изображения
-img = cv2.imread('C:/a/faces/2_1.jpg')
+img = cv2.imread('C:/a/faces/1_1.jpg')
 # Преобразуем в полутоновое изображение
 gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # Загрузка эталонного изображения
