@@ -19,10 +19,6 @@ gray = cv2.cvtColor(src=img, code=cv2.COLOR_BGR2GRAY)
 # Используем детектор для поиска точек
 faces = detector(gray)
 for face in faces:
-    x1 = face.left() # левая точка
-    y1 = face.top() # верхняя точка
-    x2 = face.right() # правая точка
-    y2 = face.bottom() # нижняя точка
     # Ищем ориентиры
     landmarks = predictor(image=gray, box=face)
 
